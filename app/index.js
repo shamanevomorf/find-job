@@ -18,7 +18,7 @@ export default function Home() {
           headerStyle: { backgroundColor: COLORS.lightWhite },
           headerShadowVisible: false,
           headerLeft: () => <ScreenHeaderBtn iconUrl={icons.menu} dimension="100%" />,
-          headerRight: () => <ScreenHeaderBtn iconUrl={images.profile} dimension="100%" />,
+          headerRight: () => <ScreenHeaderBtn iconUrl={images.profile} dimension="100%" handlePress={() => router.push('/profile')}  />,
           headerTitle: ""
         }}
       />
